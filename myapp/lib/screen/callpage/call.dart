@@ -125,7 +125,7 @@ class TestDetailPage extends StatelessWidget {
 
   static Future<http.Response> getSAData(SACode) async {
     final resp = http.get(Uri.parse(
-        "http://data.ex.co.kr/openapi/business/curStateStation?text=9287537684&type=json&numOfRows=10&pageNo=1&serviceAreaCode2=$SACode"));
+        "http://data.ex.co.kr/openapi/business/curStateStation?key=test&type=json&numOfRows=10&pageNo=1&serviceAreaCode2=$SACode"));
     return resp;
   }
 
